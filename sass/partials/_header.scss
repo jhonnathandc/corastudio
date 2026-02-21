@@ -1,0 +1,45 @@
+.header-bg {
+  background-color: rgba(17, 17, 19, 0.75);
+  border-bottom: 1px solid rgba(230, 235, 242, 0.1);
+  backdrop-filter: blur(4px);
+
+  position: absolute;
+  z-index: 99;
+  width: 100%;
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-top: 1.6rem;
+    padding-bottom: 1.6rem;
+
+    position: relative;
+
+    nav {
+      .menu-links {
+        display: flex;
+        gap: 1.6rem;
+      }
+
+      @include responsive(s) {
+        display: none;
+      }
+
+      @include responsive(xs) {
+        display: none;
+      }
+    }
+
+    .outside {
+      @include responsive(s) {
+        display: none;
+      }
+
+      @include responsive(xs) {
+        display: none;
+      }
+    }
+  }
+}

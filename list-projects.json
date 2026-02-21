@@ -1,0 +1,28 @@
+[
+  {
+    "id": "formatod",
+    "nome": "Formato D",
+    "cover": "../assets/formatod.png",
+    "content": "Desenvolvi um projeto institucional para a Formato D Arquitetura com foco em posicionamento estratégico e autoridade de marca. A proposta foi destacar a solidez do escritório, evidenciando seus mais de 25 anos de experiência e a marca de mais de 1.000 projetos executados e clientes atendidos. Desenvolvi um projeto institucional para a Formato D Arquitetura com foco em posicionamento estratégico e autoridade de marca. A proposta foi destacar a solidez do escritório, evidenciando seus mais de 25 anos de experiência e a marca de mais de 1.000 projetos executados e clientes atendidos. Desenvolvi um projeto institucional para a Formato D Arquitetura com foco em posicionamento estratégico e autoridade de marca. A proposta foi destacar a solidez do escritório, evidenciando seus mais de 25 anos de experiência e a marca de mais de 1.000 projetos executados e clientes atendidos. Desenvolvi um projeto institucional para a Formato D Arquitetura com foco em posicionamento estratégico e autoridade de marca. A proposta foi destacar a solidez do escritório, evidenciando seus mais de 25 anos de experiência e a marca de mais de 1.000 projetos executados e clientes atendidos.",
+    "image": "",
+    "link": ""
+  },
+
+  {
+    "id": "flordeoliveira",
+    "nome": "Flor de Oliveira",
+    "cover": "../assets/flordeoliveira.png",
+    "content": "",
+    "image": "",
+    "link": ""
+  },
+
+  {
+    "id": "leve",
+    "nome": "Leve",
+    "cover": "../assets/leve.png",
+    "content": "",
+    "image": "",
+    "link": ""
+  }
+]

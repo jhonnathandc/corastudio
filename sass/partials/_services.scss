@@ -1,0 +1,148 @@
+.services {
+  margin-top: 9.6rem;
+
+  .services-title {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    align-items: center;
+    max-width: 56.7rem;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 4.8rem;
+  }
+
+  .list-services {
+    .webdesign,
+    .ecommerce,
+    .idv {
+      height: 56.4rem;
+      border: 0.8rem solid $black-light;
+      padding: 0.8rem;
+      border-radius: 1.6rem;
+      position: relative;
+      margin-bottom: 1.6rem;
+
+      display: flex;
+      align-items: center;
+      position: sticky;
+      overflow: hidden;
+
+      .content {
+        margin-left: 9.6rem;
+        max-width: 54.8rem;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        position: relative;
+        z-index: 9;
+
+        @include responsive(s) {
+          margin-left: 4rem;
+        }
+
+        @include responsive(xs) {
+          margin-left: 2.4rem;
+        }
+
+        h3 {
+          margin: 0.8rem 0;
+        }
+
+        .btn-primary {
+          margin-top: 1.6rem;
+        }
+      }
+    }
+
+    .webdesign {
+      position: sticky;
+      top: 0;
+
+      &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        background: linear-gradient(
+          90deg,
+          #111113 43%,
+          rgba(17, 17, 19, 0) 100%
+        );
+      }
+
+      &::after {
+        content: '';
+        display: block;
+        background: url('../../assets/bg-websites.png');
+        height: 84.6rem;
+        width: 193.2rem;
+        position: absolute;
+        z-index: -1;
+        right: 0;
+        top: 0;
+      }
+    }
+
+    .ecommerce {
+      position: sticky;
+      top: 20rem;
+
+      &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        background: linear-gradient(
+          90deg,
+          #111113 43%,
+          rgba(17, 17, 19, 0) 100%
+        );
+      }
+
+      &::after {
+        content: '';
+        display: block;
+        background: url('../../assets/bg-ecommerce.png');
+        height: 84.6rem;
+        width: 193.2rem;
+        position: absolute;
+        z-index: -1;
+        right: 0;
+        top: 0;
+      }
+    }
+
+    .idv {
+      &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        background: linear-gradient(
+          90deg,
+          #111113 43%,
+          rgba(17, 17, 19, 0) 100%
+        );
+      }
+
+      &::after {
+        content: '';
+        display: block;
+        background: url('../../assets/bg-idv.png');
+        height: 84.6rem;
+        width: 193.2rem;
+        position: absolute;
+        z-index: -1;
+        right: 0;
+        top: 0;
+      }
+    }
+  }
+}

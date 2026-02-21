@@ -1,0 +1,88 @@
+// ========== PRIMARY ==========
+$primary-darken: #2a4f85;
+$primary-dark: #325fa0;
+$primary-normal: #3b73b9;
+$primary-light: #6b95cf;
+$primary-gradient: linear-gradient(
+  90deg,
+  #1f3e66 0%,
+  #2a4f85 35%,
+  #3b73b9 70%,
+  #5e8ac8 100%
+);
+
+// ========== WHITE ==========
+$white-normal: #e6ebf2;
+$white-light: #f7f7ff;
+
+// ========== WHITE ==========
+$black-dark: #111113;
+$black-normal: #151518;
+$black-light: #1d1d20;
+
+// ========== GRAY ==========
+$gray-500: #868686;
+$gray-400: #9d9d9d;
+$gray-300: #bdbdbd;
+$gray-200: #d5d5d5;
+$gray-100: #e0e0e0;
+
+// ========== PRIMARY ==========
+.primary-darken {
+  color: $primary-darken;
+}
+
+.primary-dark {
+  color: $primary-dark;
+}
+
+.primary-normal {
+  color: $primary-normal;
+}
+
+.primary-light {
+  color: $primary-light;
+}
+
+// ========== WHITE ==========
+.white-normal {
+  color: $white-normal;
+}
+
+.white-light {
+  color: $white-light;
+}
+
+// ========== BLACK ==========
+.black-dark {
+  color: $black-dark;
+}
+
+.black-normal {
+  color: $black-normal;
+}
+
+.black-light {
+  color: $black-light;
+}
+
+// ========== GRAY ==========
+.gray-500 {
+  color: $gray-500;
+}
+
+.gray-400 {
+  color: $gray-400;
+}
+
+.gray-300 {
+  color: $gray-300;
+}
+
+.gray-200 {
+  color: $gray-200;
+}
+
+.gray-100 {
+  color: $gray-100;
+}

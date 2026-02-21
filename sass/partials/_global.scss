@@ -1,0 +1,99 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: $black-dark;
+}
+
+.btn-primary {
+  @include type2(b3, desktop);
+  @include responsive(m) {
+    @include type2(b3, tablet);
+  }
+  @include responsive(s) {
+    @include type2(b3, tablet);
+  }
+  @include responsive(xs) {
+    @include type2(b3, mobile);
+  }
+  font-weight: 600;
+  color: $white-normal;
+  text-align: center;
+
+  padding: 1.2rem 2.4rem;
+  background-color: $primary-normal;
+  border-radius: 1.2rem;
+  transition: 0.3s ease;
+
+  &:hover {
+    background-color: $primary-dark;
+  }
+}
+
+.btn-secondary {
+  @include type2(b3, desktop);
+  @include responsive(m) {
+    @include type2(b3, tablet);
+  }
+  @include responsive(s) {
+    @include type2(b3, tablet);
+  }
+  @include responsive(xs) {
+    @include type2(b3, mobile);
+  }
+  font-weight: 600;
+  color: $white-normal;
+  text-align: center;
+
+  padding: 1.2rem 2.4rem;
+  border: 1px solid $white-normal;
+  border-radius: 1.2rem;
+  transition: 0.3s ease;
+
+  &:hover {
+    border-color: $gray-200;
+    color: $gray-200;
+  }
+}
+
+.btn-link {
+  @include type2(b3, desktop);
+  @include responsive(m) {
+    @include type2(b3, tablet);
+  }
+  @include responsive(s) {
+    @include type2(b3, tablet);
+  }
+  @include responsive(xs) {
+    @include type2(b3, mobile);
+  }
+  font-weight: 600;
+  color: $white-normal;
+
+  padding: 1.2rem 2.4rem;
+  transition: 0.3s ease;
+
+  &:hover {
+    color: $gray-200;
+  }
+}
+
+.hat {
+  @include type2(b4, desktop);
+  @include responsive(m) {
+    @include type2(b4, tablet);
+  }
+  @include responsive(s) {
+    @include type2(b4, tablet);
+  }
+  @include responsive(xs) {
+    @include type2(b4, mobile);
+  }
+  color: $gray-300;
+
+  padding: 1.2rem 2.4rem;
+  border-radius: 1.2rem;
+  background-color: $black-dark;
+  border: 1px solid rgba(230, 235, 242, 0.1);
+}

@@ -1,0 +1,60 @@
+.hero-bg {
+  background: url('../assets/bg-hero.png') no-repeat center;
+  background-size: cover;
+  height: 100vh;
+
+  .linear {
+    height: 50%;
+    width: 100%;
+    background: linear-gradient(0deg, #111113 0%, rgba(17, 17, 19, 0) 100%);
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+  }
+
+  .hero {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    gap: 1.6rem;
+    align-items: end;
+    justify-content: space-between;
+    height: 100%;
+    padding-bottom: 6.4rem;
+
+    @include responsive(s) {
+      flex-direction: column;
+      align-items: start;
+      justify-content: end;
+    }
+
+    @include responsive(xs) {
+      flex-direction: column;
+      align-items: start;
+      justify-content: end;
+    }
+
+    .hero-title {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+
+      .hat {
+        margin-bottom: 0.8rem;
+      }
+    }
+
+    .hero-desc {
+      max-width: 50rem;
+
+      p {
+        margin-bottom: 1.6rem;
+      }
+
+      .buttons {
+        display: flex;
+        gap: 1.6rem;
+      }
+    }
+  }
+}

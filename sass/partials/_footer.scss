@@ -1,0 +1,28 @@
+.footer {
+  .footer-content {
+    border-top: 1px solid $black-normal;
+    border-bottom: 1px solid $black-normal;
+    padding-top: 3.2rem;
+    padding-bottom: 3.2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .made {
+      p {
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+      }
+    }
+  }
+
+  .footer-thanks {
+    margin-top: 3.2rem;
+
+    img {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,229 @@
+@font-face {
+  font-family: 'Monument';
+  src: url('../../fonts/MonumentExtended-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../../fonts/Inter_18pt-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../../fonts/Inter_18pt-SemiBold.ttf');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@mixin type1($size, $device) {
+  font-family: 'Monument';
+  font-weight: 400;
+  line-height: 1.2;
+
+  // H1
+  @if ($size == h1) and ($device == desktop) {
+    font-size: 4.8rem;
+  } @else if ($size == h1) and ($device == tablet) {
+    font-size: 4rem;
+  } @else if ($size == h1) and ($device == mobile) {
+    font-size: 3.2rem;
+  }
+
+  // H2
+  @else if ($size == h2) and ($device == desktop) {
+    font-size: 4rem;
+  } @else if ($size == h2) and ($device == tablet) {
+    font-size: 3.2rem;
+  } @else if ($size == h2) and ($device == mobile) {
+    font-size: 2.8rem;
+  }
+
+  // H3
+  @else if ($size == h3) and ($device == desktop) {
+    font-size: 3.2rem;
+  }
+
+  // H4
+  @else if ($size == h4) and ($device == desktop) {
+    font-size: 2rem;
+  } @else if ($size == h4) and ($device == tablet) {
+    font-size: 1.8rem;
+  } @else if ($size == h4) and ($device == mobile) {
+    font-size: 1.6rem;
+  }
+
+  // H5
+  @else if ($size == h5) and ($device == desktop) {
+    font-size: 1.4rem;
+  } @else if ($size == h5) and ($device == mobile) {
+    font-size: 1.2rem;
+  }
+
+  // H6
+  @else if ($size == h6) and ($device == desktop) {
+    font-size: 1.2rem;
+  }
+}
+
+@mixin type2($size, $device) {
+  font-family: 'Inter';
+  line-height: 1.6;
+  font-weight: 400;
+
+  // B1
+  @if ($size == b1) and ($device == desktop) {
+    font-size: 2.4rem;
+  }
+
+  // B2
+  @else if ($size == b2) and ($device == desktop) {
+    font-size: 1.8rem;
+  }
+
+  // B3
+  @else if ($size == b3) and ($device == desktop) {
+    font-size: 1.6rem;
+  }
+
+  // B4
+  @else if ($size b4) and ($device == desktop) {
+    font-size: 1.4rem;
+  }
+}
+
+.h1 {
+  @include type1(h1, desktop);
+  @include responsive(m) {
+    @include type1(h1, tablet);
+  }
+  @include responsive(s) {
+    @include type1(h1, tablet);
+  }
+  @include responsive(xs) {
+    @include type1(h1, mobile);
+  }
+}
+
+.h2 {
+  @include type1(h2, desktop);
+  @include responsive(m) {
+    @include type1(h2, tablet);
+  }
+  @include responsive(s) {
+    @include type1(h2, tablet);
+  }
+  @include responsive(xs) {
+    @include type1(h2, mobile);
+  }
+}
+
+.h3 {
+  @include type1(h3, desktop);
+  @include responsive(m) {
+    @include type1(h3, tablet);
+  }
+  @include responsive(s) {
+    @include type1(h3, tablet);
+  }
+  @include responsive(xs) {
+    @include type1(h3, mobile);
+  }
+}
+
+.h4 {
+  @include type1(h4, desktop);
+  @include responsive(l) {
+    @include type1(h4, tablet);
+  }
+  @include responsive(m) {
+    @include type1(h4, tablet);
+  }
+  @include responsive(s) {
+    @include type1(h4, tablet);
+  }
+  @include responsive(xs) {
+    @include type1(h4, mobile);
+  }
+}
+
+.h5 {
+  @include type1(h5, desktop);
+  @include responsive(m) {
+    @include type1(h5, tablet);
+  }
+  @include responsive(s) {
+    @include type1(h5, tablet);
+  }
+  @include responsive(xs) {
+    @include type1(h5, mobile);
+  }
+}
+
+.h6 {
+  @include type1(h6, desktop);
+  @include responsive(m) {
+    @include type1(h6, tablet);
+  }
+  @include responsive(s) {
+    @include type1(h6, tablet);
+  }
+  @include responsive(xs) {
+    @include type1(h6, mobile);
+  }
+}
+
+.b1 {
+  @include type2(b1, desktop);
+  @include responsive(m) {
+    @include type2(b1, tablet);
+  }
+  @include responsive(s) {
+    @include type2(b1, tablet);
+  }
+  @include responsive(xs) {
+    @include type2(b1, mobile);
+  }
+}
+
+.b2 {
+  @include type2(b2, desktop);
+  @include responsive(m) {
+    @include type2(b2, tablet);
+  }
+  @include responsive(s) {
+    @include type2(b2, tablet);
+  }
+  @include responsive(xs) {
+    @include type2(b2, mobile);
+  }
+}
+
+.b3 {
+  @include type2(b3, desktop);
+  @include responsive(m) {
+    @include type2(b3, tablet);
+  }
+  @include responsive(s) {
+    @include type2(b3, tablet);
+  }
+  @include responsive(xs) {
+    @include type2(b3, mobile);
+  }
+}
+
+.b4 {
+  @include type2(b4, desktop);
+  @include responsive(m) {
+    @include type2(b4, tablet);
+  }
+  @include responsive(s) {
+    @include type2(b4, tablet);
+  }
+  @include responsive(xs) {
+    @include type2(b4, mobile);
+  }
+}
