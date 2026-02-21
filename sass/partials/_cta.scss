@@ -15,7 +15,8 @@
     width: 642px;
     position: absolute;
     top: -15rem;
-    left: -20rem;
+    left: 0;
+    transform: translateX(-20rem);
     z-index: -1;
   }
 
@@ -27,7 +28,8 @@
     height: 648px;
     width: 634px;
     position: absolute;
-    right: -10rem;
+    right: 0;
+    transform: translateX(10rem);
     bottom: -18rem;
     z-index: -1;
   }
@@ -47,4 +49,8 @@
       margin-bottom: 1.6rem;
     }
   }
+}
+
+.wrapper {
+  overflow: hidden;
 }
