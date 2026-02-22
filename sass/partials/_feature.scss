@@ -1,37 +1,66 @@
 .feature {
-  display: flex;
-  align-items: center;
-
   position: relative;
+  top: -4rem;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  padding: 6rem 0;
+}
+
+.feature-track {
   overflow: hidden;
+  transform: rotate(3deg);
 
-  .feature-black {
-    background-color: $black-normal;
-    transform: translateX(-50%) rotate(3deg);
-  }
+  &.blue {
+    background: $primary-normal;
+    transform: rotate(-3deg);
+    position: relative;
+    top: -6rem;
 
-  .feature-blue {
-    background-color: $primary-normal;
-    transform: translateX(-50%) rotate(-3deg);
-  }
-
-  .feature-blue,
-  .feature-black {
-    position: absolute;
-    z-index: 10;
-    left: 50%;
-    top: 105%;
-
-    ul {
-      display: flex;
-      gap: 1.6rem;
-
-      li {
-        display: flex;
-        gap: 0.8rem;
-        padding: 1.2rem 2.4rem;
-        white-space: nowrap;
-      }
+    @include responsive(s) {
+      top: -2rem;
     }
+    
+    @include responsive(xs) {
+      top: -2rem;
+    }
+  }
+
+  &.black {
+    background: $black-normal;
+  }
+}
+
+.track {
+  display: flex;
+  width: max-content;
+  animation: scroll 20s linear infinite;
+
+  &.reverse {
+    animation-direction: reverse;
+  }
+
+  ul {
+    display: flex;
+    gap: 1.6rem;
+    padding: .4rem 0;
+
+    li {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      padding: 1.2rem 2.4rem;
+      white-space: nowrap;
+      color: $gray-300;
+    }
+  }
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
   }
 }
