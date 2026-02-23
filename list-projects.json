@@ -2,27 +2,44 @@
   {
     "id": "formatod",
     "nome": "Formato D",
-    "cover": "../assets/formatod.png",
-    "content": "Desenvolvi um projeto institucional para a Formato D Arquitetura com foco em posicionamento estratégico e autoridade de marca. A proposta foi destacar a solidez do escritório, evidenciando seus mais de 25 anos de experiência e a marca de mais de 1.000 projetos executados e clientes atendidos. Desenvolvi um projeto institucional para a Formato D Arquitetura com foco em posicionamento estratégico e autoridade de marca. A proposta foi destacar a solidez do escritório, evidenciando seus mais de 25 anos de experiência e a marca de mais de 1.000 projetos executados e clientes atendidos. Desenvolvi um projeto institucional para a Formato D Arquitetura com foco em posicionamento estratégico e autoridade de marca. A proposta foi destacar a solidez do escritório, evidenciando seus mais de 25 anos de experiência e a marca de mais de 1.000 projetos executados e clientes atendidos. Desenvolvi um projeto institucional para a Formato D Arquitetura com foco em posicionamento estratégico e autoridade de marca. A proposta foi destacar a solidez do escritório, evidenciando seus mais de 25 anos de experiência e a marca de mais de 1.000 projetos executados e clientes atendidos.",
-    "image": "",
-    "link": ""
-  },
-
-  {
-    "id": "flordeoliveira",
-    "nome": "Flor de Oliveira",
-    "cover": "../assets/flordeoliveira.png",
-    "content": "",
-    "image": "",
-    "link": ""
+    "cover": "../assets/formatod/imagem1.png",
+    "content": "Desenvolvi um projeto institucional para a Formato D - Arquitetura com foco em posicionamento estratégico e autoridade de marca. A proposta foi destacar a solidez do escritório, evidenciando seus mais de 25 anos de experiência e a marca de mais de 1.000 projetos executados e clientes atendidos.",
+    "images": [
+      "../assets/formatod/imagem1.png",
+      "../assets/formatod/imagem2.png",
+      "../assets/formatod/imagem3.png",
+      "../assets/formatod/imagem4.png"
+    ],
+    "link": "https://www.behance.net/gallery/244632159/Site-Institucional-Formato-D-Arquitetura"
   },
 
   {
     "id": "leve",
     "nome": "Leve",
-    "cover": "../assets/leve.png",
-    "content": "",
-    "image": "",
-    "link": ""
+    "cover": "../assets/leve/imagem1.png",
+    "content": "O nome 'LEVE' tem sua origem em duas ideias: 'o fardo é leve' e 'leve por onde for'. Através dos produtos, como ecobags, nécessaires e bolsas, buscamos reavivar a consciência sobre a importância de caminharmos sem excesso de peso. Deus nos ensinou que o fardo é leve, e não há razão para carregarmos bagagens em nossas jornadas.",
+    "images": [
+      "../assets/leve/imagem1.png",
+      "../assets/leve/imagem2.png",
+      "../assets/leve/imagem3.png",
+      "../assets/leve/imagem4.png",
+      "../assets/leve/imagem5.png",
+      "../assets/leve/imagem6.png"
+    ],
+    "link": "https://www.behance.net/gallery/187060513/Identidade-Visual-Leve"
+  },
+
+  {
+    "id": "flordeoliveira",
+    "nome": "Flor de Oliveira",
+    "cover": "../assets/flordeoliveira/imagem1.jpg",
+    "content": "O símbolo vem a partir da letra 'O' do nome da marca, transformando-o em uma flor e simbolizando a 'Flor de Oliveira'. A letra 'O' transmite harmonia e continuidade devido à sua forma circular. Essa forma sem início ou fim simboliza perfeição, continuidade e união.",
+    "images": [
+      "../assets/flordeoliveira/imagem1.jpg",
+      "../assets/flordeoliveira/imagem2.jpg",
+      "../assets/flordeoliveira/imagem3.png",
+      "../assets/flordeoliveira/imagem4.png"
+    ],
+    "link": "https://www.behance.net/gallery/187060513/Identidade-Visual-Leve"
   }
 ]

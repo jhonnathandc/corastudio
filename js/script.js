@@ -61,9 +61,42 @@ function openModal(projectId) {
   const project = projectsData.find((p) => p.id === projectId);
   if (!project) return;
 
-  modalImage.innerHTML = `
-    <img src="${project.cover}">
-  `;
+  if (
+    !project.images ||
+    !Array.isArray(project.images) ||
+    project.images.length === 0
+  ) {
+    modalImage.innerHTML = `<img src="${project.cover}">`;
+  } else {
+    modalImage.innerHTML = `
+      <div class="slider">
+        <div class="slides">
+          ${project.images
+            .map(
+              (img) => `
+            <img src="${img}" class="slide-img">
+          `,
+            )
+            .join('')}
+        </div>
+
+        <div class="slider-dots">
+          ${project.images
+            .map(
+              (_, i) => `
+            <button class="dot ${i === 0 ? 'active' : ''}" data-index="${i}"></button>
+          `,
+            )
+            .join('')}
+        </div>
+
+        <button class="prev">‹</button>
+        <button class="next">›</button>
+      </div>
+    `;
+
+    initSlider();
+  }
 
   projectTitle.innerHTML = `
     <h2 class="h4 white-light">${project.nome}</h2>
@@ -113,3 +146,77 @@ overlay.addEventListener('click', closeModal);
 document.addEventListener('keydown', (e) => {
   if (e.key === 'Escape') closeModal();
 });
+
+function initSlider() {
+  const slides = modalImage.querySelector('.slides');
+  const images = modalImage.querySelectorAll('.slide-img');
+  const next = modalImage.querySelector('.next');
+  const prev = modalImage.querySelector('.prev');
+  const dots = modalImage.querySelectorAll('.dot');
+
+  let index = 0;
+  let startX = 0;
+  let isDragging = false;
+  let autoPlay;
+
+  function update() {
+    slides.style.transform = `translateX(-${index * 100}%)`;
+
+    dots.forEach((dot) => dot.classList.remove('active'));
+    dots[index].classList.add('active');
+  }
+
+  function nextSlide() {
+    index = (index + 1) % images.length;
+    update();
+  }
+
+  function prevSlide() {
+    index = (index - 1 + images.length) % images.length;
+    update();
+  }
+
+  function startAutoPlay() {
+    autoPlay = setInterval(nextSlide, 4000);
+  }
+
+  function stopAutoPlay() {
+    clearInterval(autoPlay);
+  }
+
+  next.addEventListener('click', nextSlide);
+  prev.addEventListener('click', prevSlide);
+
+  dots.forEach((dot) => {
+    dot.addEventListener('click', () => {
+      index = Number(dot.dataset.index);
+      update();
+    });
+  });
+
+  // Swipe Mobile
+  slides.addEventListener('touchstart', (e) => {
+    startX = e.touches[0].clientX;
+    isDragging = true;
+    stopAutoPlay();
+  });
+
+  slides.addEventListener('touchend', (e) => {
+    if (!isDragging) return;
+
+    let endX = e.changedTouches[0].clientX;
+    let diff = startX - endX;
+
+    if (diff > 50) nextSlide();
+    if (diff < -50) prevSlide();
+
+    isDragging = false;
+    startAutoPlay();
+  });
+
+  // Pause no hover (desktop)
+  modalImage.addEventListener('mouseenter', stopAutoPlay);
+  modalImage.addEventListener('mouseleave', startAutoPlay);
+
+  startAutoPlay();
+}
