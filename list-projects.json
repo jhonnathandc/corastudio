@@ -1,5 +1,19 @@
 [
   {
+    "id": "homele",
+    "nome": "Homelê",
+    "cover": "../assets/homele/imagem1.png",
+    "content": "Landing page desenvolvida para a Homele, marca fictícia de móveis planejados criada para transmitir sofisticação, organização e personalização. O projeto foi pensado para destacar o conceito de exclusividade e aproveitamento inteligente de espaço, com layout moderno, tipografia elegante e composição visual clean. A estrutura prioriza clareza na apresentação dos serviços, valorização do design e foco em conversão através de chamadas estratégicas.",
+    "images": [
+      "../assets/homele/imagem1.png",
+      "../assets/homele/imagem2.png",
+      "../assets/homele/imagem3.png",
+      "../assets/homele/imagem4.png"
+    ],
+    "link": "https://www.behance.net/gallery/244677171/Landing-Page-Homele"
+  },
+
+  {
     "id": "formatod",
     "nome": "Formato D",
     "cover": "../assets/formatod/imagem1.png",
