@@ -27,19 +27,5 @@
       "../assets/leve/imagem6.png"
     ],
     "link": "https://www.behance.net/gallery/187060513/Identidade-Visual-Leve"
-  },
-
-  {
-    "id": "flordeoliveira",
-    "nome": "Flor de Oliveira",
-    "cover": "../assets/flordeoliveira/imagem1.jpg",
-    "content": "O símbolo vem a partir da letra 'O' do nome da marca, transformando-o em uma flor e simbolizando a 'Flor de Oliveira'. A letra 'O' transmite harmonia e continuidade devido à sua forma circular. Essa forma sem início ou fim simboliza perfeição, continuidade e união.",
-    "images": [
-      "../assets/flordeoliveira/imagem1.jpg",
-      "../assets/flordeoliveira/imagem2.jpg",
-      "../assets/flordeoliveira/imagem3.png",
-      "../assets/flordeoliveira/imagem4.png"
-    ],
-    "link": "https://www.behance.net/gallery/187060513/Identidade-Visual-Leve"
   }
 ]
