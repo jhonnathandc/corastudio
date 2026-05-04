@@ -1,7 +1,14 @@
 .hero-bg {
-  background: url('../assets/bg-hero.png') no-repeat center;
-  background-size: cover;
   height: 100vh;
+
+  .image-bg {
+    position: absolute;
+    z-index: -1;
+
+    img {
+      width: 100vw;
+    }
+  }
 
   .linear {
     height: 50%;

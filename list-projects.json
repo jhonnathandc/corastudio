@@ -2,13 +2,13 @@
   {
     "id": "homele",
     "nome": "Homelê",
-    "cover": "../assets/homele/imagem1.png",
+    "cover": "../assets/homele/imagem1.webp",
     "content": "Landing page desenvolvida para a Homele, marca fictícia de móveis planejados criada para transmitir sofisticação, organização e personalização. O projeto foi pensado para destacar o conceito de exclusividade e aproveitamento inteligente de espaço, com layout moderno, tipografia elegante e composição visual clean. A estrutura prioriza clareza na apresentação dos serviços, valorização do design e foco em conversão através de chamadas estratégicas.",
     "images": [
-      "../assets/homele/imagem1.png",
-      "../assets/homele/imagem2.png",
-      "../assets/homele/imagem3.png",
-      "../assets/homele/imagem4.png"
+      "../assets/homele/imagem1.webp",
+      "../assets/homele/imagem2.webp",
+      "../assets/homele/imagem3.webp",
+      "../assets/homele/imagem4.webp"
     ],
     "link": "https://www.behance.net/gallery/244677171/Landing-Page-Homele"
   },
@@ -16,13 +16,13 @@
   {
     "id": "formatod",
     "nome": "Formato D",
-    "cover": "../assets/formatod/imagem1.png",
+    "cover": "../assets/formatod/imagem1.webp",
     "content": "Desenvolvi um projeto institucional para a Formato D - Arquitetura com foco em posicionamento estratégico e autoridade de marca. A proposta foi destacar a solidez do escritório, evidenciando seus mais de 25 anos de experiência e a marca de mais de 1.000 projetos executados e clientes atendidos.",
     "images": [
-      "../assets/formatod/imagem1.png",
-      "../assets/formatod/imagem2.png",
-      "../assets/formatod/imagem3.png",
-      "../assets/formatod/imagem4.png"
+      "../assets/formatod/imagem1.webp",
+      "../assets/formatod/imagem2.webp",
+      "../assets/formatod/imagem3.webp",
+      "../assets/formatod/imagem4.webp"
     ],
     "link": "https://www.behance.net/gallery/244632159/Site-Institucional-Formato-D-Arquitetura"
   },
@@ -30,15 +30,15 @@
   {
     "id": "leve",
     "nome": "Leve",
-    "cover": "../assets/leve/imagem1.png",
+    "cover": "../assets/leve/imagem1.webp",
     "content": "O nome 'LEVE' tem sua origem em duas ideias: 'o fardo é leve' e 'leve por onde for'. Através dos produtos, como ecobags, nécessaires e bolsas, buscamos reavivar a consciência sobre a importância de caminharmos sem excesso de peso. Deus nos ensinou que o fardo é leve, e não há razão para carregarmos bagagens em nossas jornadas.",
     "images": [
-      "../assets/leve/imagem1.png",
-      "../assets/leve/imagem2.png",
-      "../assets/leve/imagem3.png",
-      "../assets/leve/imagem4.png",
-      "../assets/leve/imagem5.png",
-      "../assets/leve/imagem6.png"
+      "../assets/leve/imagem1.webp",
+      "../assets/leve/imagem2.webp",
+      "../assets/leve/imagem3.webp",
+      "../assets/leve/imagem4.webp",
+      "../assets/leve/imagem5.webp",
+      "../assets/leve/imagem6.webp"
     ],
     "link": "https://www.behance.net/gallery/187060513/Identidade-Visual-Leve"
   }
